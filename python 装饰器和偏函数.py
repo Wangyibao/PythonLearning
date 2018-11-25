@@ -19,3 +19,11 @@ def now():
     print('2018-11-11')
 
 print(now())
+print('--------------------------')
+# 偏函数
+import functools
+# 偏函数：转换成二进制
+int2=functools.partial(int,base=2)
+print(int2('10000'))
+# 调用函数，将参数更改
+print(int2('10000',base=10))
