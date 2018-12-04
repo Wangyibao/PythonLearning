@@ -10,17 +10,17 @@ finally:
 print('end')
 
 # 抛出错误
-# class FooError(ValueError):
-#     pass
+class FooError(ValueError):
+    pass
 
-# def foo(s):
-#     n=int(s)
-#     if n==0:
-#         # 抛出异常
-#         raise FooError('invalid value: %s' %s)
-#     return 10/n
+def foo(s):
+    n=int(s)
+    if n==0:
+        # 抛出异常
+        raise FooError('invalid value: %s' %s)
+    return 10/n
 
-# foo('0')
+foo('0')
 
 # 断言
 def fee(s):
